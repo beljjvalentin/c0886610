@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<!-- This website template was created by: Valentin Belii -->
+<!--
+ Student Name: Valentin Belii
+ File Name: index.html
+ Date: 12/04/2023
+-->
 <html lang="en"> 
 <head>
 	<title>ChillMakers</title>
@@ -15,14 +19,31 @@
 <body>
 
 	<div id="container">
-	
+
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="specials.html">Specials</a>
+				<a href="recipes.html">Best recipes</a>
+				<a href="media.html">Media</a>
+				<a href="schedule.html">Our schedule</a>
+				<a href="team.html">Our team</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+
 		<!-- Use the header area for the website name or logo -->
 		<header>
 			<a href="index.html"><img src="images/chill-makers-logo.png" alt="ChillMakers logo"></a>
 		</header>
 		
 		<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
+		<nav class="tablet-desktop">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
@@ -68,7 +89,7 @@
 				</p>
 
 				<p> We commit ourselves to the craft of iced tea making and that is why our website offers the best tea recipes completely for FREE.
-					If you feel like you would like to share your custom recipes - you can always <span class="action">CONTACT US</span>, and we will publish it.
+					If you feel like you would like to share your custom recipes - you can always <span class="action">contact us</span>, and we will publish it.
 				</p>
 
 				<p>
@@ -105,6 +126,6 @@
 		</footer>
 	
 	</div>
-	
+	<script src="scripts/script.js"></script>
 </body>
 </html>

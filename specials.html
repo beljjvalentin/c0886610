@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<!-- This website template was created by: Valentin Belii -->
+<!--
+ Student Name: Valentin Belii
+ File Name: specials.html
+ Date: 12/04/2023
+-->
 <html lang="en">
 <head>
     <title>Appliances</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/specials.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ChillMakers. We know everything about high quality iced tea.">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Lato:wght@700&display=swap" rel="stylesheet">
@@ -17,13 +22,30 @@
 
 <div id="container">
 
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="specials.html">Specials</a>
+            <a href="recipes.html">Best recipes</a>
+            <a href="media.html">Media</a>
+            <a href="schedule.html">Our schedule</a>
+            <a href="team.html">Our team</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
     <!-- Use the header area for the website name or logo -->
     <header>
         <a href="index.html"><img src="images/chill-makers-logo.png" alt="ChillMakers logo"></a>
     </header>
 
     <!-- Use the nav area to add hyperlinks to other pages within the website -->
-    <nav>
+    <nav class="tablet-desktop">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -88,7 +110,7 @@
         <p>As a family owned and operated company we stand behind every product we sell. If our products fail to live up to your standards,
             you may return them at any time for a replacement - no questions asked!</p>
         <br>
-        <h1>Why buy from ChillMakers</h1>
+        <h1>Why buy from ChillMakers?</h1>
         <p>We are dedicated to providing our customers with the best service possible! We will continue to strive to make ChillMakers
             your first choice for the best products, lightning fast shipping and superior customer service.</p>
     </main>
@@ -103,6 +125,6 @@
     </footer>
 
 </div>
-
+<script src="scripts/script.js"></script>
 </body>
 </html>

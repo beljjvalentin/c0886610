@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<!-- This website template was created by: Valentin Belii -->
+<!--
+ Student Name: Valentin Belii
+ File Name: media.html
+ Date: 12/04/2023
+-->
 <html lang="en">
 <head>
     <title>ChillMakers</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ChillMakers. We know everything about high quality iced tea.">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Lato:wght@700&display=swap" rel="stylesheet">
@@ -17,13 +22,30 @@
 
 <div id="container">
 
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="specials.html">Specials</a>
+            <a href="recipes.html">Best recipes</a>
+            <a href="media.html">Media</a>
+            <a href="schedule.html">Our schedule</a>
+            <a href="team.html">Our team</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
     <!-- Use the header area for the website name or logo -->
     <header>
         <a href="index.html"><img src="images/chill-makers-logo.png" alt="ChillMakers logo"></a>
     </header>
 
     <!-- Use the nav area to add hyperlinks to other pages within the website -->
-    <nav>
+    <nav class="tablet-desktop">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -39,7 +61,7 @@
     <!-- Use the main area to add the main content of the webpage -->
     <main>
         <h3>Check out our latest iced tea making video</h3>
-        <video controls poster="images/hero-image.jpg">
+        <video controls poster="images/iced-tea-jar-narrow.png">
             <source src="media/Easy Recipe For Homemade Iced Tea.mp4" type="video/mp4">
             <source src="media/Easy Recipe For Homemade Iced Tea.webm" type="video/webm">
             <track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
@@ -65,6 +87,6 @@
     </footer>
 
 </div>
-
+<script src="scripts/script.js"></script>
 </body>
 </html>

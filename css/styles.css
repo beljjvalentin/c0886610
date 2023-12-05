@@ -1,7 +1,7 @@
 /*
-Author: Valentin Belii
-Date: 10/11/2023
-File Name: styles.css
+ Student Name: Valentin Belii
+ File Name: styles.css
+ Date: 12/04/2023
 */
 
 /* CSS Reset */
@@ -27,7 +27,7 @@ body {
 	display: inline-block;
 }
 
-.tablet-desktop {
+.tablet-desktop , #menu-links {
 	display: none;
 }
 
@@ -70,6 +70,30 @@ nav li a {
 	color: #fff;
 	padding: 0.5em 1em;
 	text-decoration: none;
+
+}
+
+.mobile-nav a {
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+	font-family: 'Cabin', sans-serif;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.menu-icon div {
+	height: 50px;
+	width: 50px;
+	background-color: #373684;
 }
 
 img {
@@ -138,44 +162,6 @@ article:nth-of-type(2) {
 	height: 50%;
 }
 
-/* Form Elements Style Rule */
-
-#form {
-	margin-top: 2%;
-	background-color: #f2f2f2;
-	padding: 2%;
-}
-
-#form h2 {
-	text-align: center;
-}
-
-
-/* Form Fields Style Rule */
-
-fieldset, input, select, textarea {
-	margin-bottom: 2%;
-}
-
-fieldset legend {
-	font-weight: bold;
-	font-size: 1.25em;
-}
-
-label {
-	display: block;
-	padding-top: 3%;
-}
-
-form #submit {
-	margin: 0 auto;
-	border: none;
-	display: block;
-	padding: 2%;
-	background-color: #b3b3b3;
-	font-size: 1em;
-	border-radius: 10px;
-}
 
 /* Style rules for footer content */
 footer p {
@@ -234,6 +220,10 @@ footer p a {
 		display: block;
 		color: #fff;
 		text-decoration: none;
+	}
+
+	.mobile-nav {
+		display: none;
 	}
 
 	/* Tablet Viewport: Style rules for main content area */
@@ -300,41 +290,6 @@ footer p a {
 		width: 600px;
 		height: 450px;
 	}
-
-	/* Tablet Viewport: Style rules for table */
-	table {
-		border: 1px solid #000;
-		border-collapse: collapse;
-		margin: 0 auto;
-		width: 100%;
-	}
-
-	caption {
-		font-size: 1.5em;
-		font-weight: bold;
-		padding: 1%;
-	}
-
-	th, td {
-		border: 1px;
-		padding: 2%;
-	}
-	
-	th {
-		background-color:#000;
-		color: #fff;
-		font-size: 1.15em;
-	}
-
-	tr:nth-child(odd) {
-		background-color: #ccc;
-	}
-
-	/* Tablet Viewport: Style rule for form element */
-	form {
-		width: 70%;
-		margin: 0 auto;
-	}
 }
 
 /* Media Query for Desktop Viewport */
@@ -343,6 +298,7 @@ footer p a {
 	/* Desktop Viewport: Style rule for header */
 	header {
 		width: 25%;
+		height: 100%;
 		float: left;
 		padding-bottom: 0;
 	}
@@ -351,7 +307,7 @@ footer p a {
 	nav {
 		float: right;
 		width: 70%;
-		margin: 4em 1em 0 0;
+		margin: 2em 1em 0 0;
 	}
 	
 	nav ul {
@@ -370,6 +326,10 @@ footer p a {
 		color: #000;
 		background-color: #fff;
 		transform: scale(1.3);
+	}
+
+	.mobile-nav {
+		display: none;
 	}
 	
 	/* Desktop Viewport: Style Rules for main content */
@@ -390,44 +350,9 @@ footer p a {
 		padding: 20px;
 	}
 	
-	.frame {
-		opacity: 0.9;
-	}
-	
-	.frame:hover {
-		opacity: 1;
-		box-shadow: 8px 8px 10px #808080;
-		transform: translateY(10px);
-	}
-	
-	#appliances, #choosing_tea, #prepare {
-		width: 29%;
-		float: left;
-		margin: 0 2%;
-	}
-	
-	#best_practices {
-		clear: left;
-	}
-	
 	.offer:hover {
 		transform: scale(1.25);
 		cursor: pointer;
-	}
-	
-	/* Desktop Viewport: Style rules for form elements */
-	form {
-		width: auto;
-	}
-	
-	.form-grid {
-		display: grid;
-		grid-template-columns: auto auto auto;
-		grid-gap: 20px;
-	}
-	
-	.btn {
-		grid-column: 1 / span 3;
 	}
 	
 }
@@ -440,10 +365,6 @@ footer p a {
 		margin: 0 auto;
 	}
 	
-	table {
-		width: 80%;
-	}
-	
 }
 
 /* Media Query for Print */
@@ -454,10 +375,6 @@ footer p a {
 		color: #000;
 	}
 	
-}
-
-#appliances, #choosing_tea, #prepare {
-	margin: 0 2%;
 }
 
 .round {
@@ -493,36 +410,6 @@ footer p a {
 #contact .contact-email-link {
 	color: #666600;
 	text-decoration: none;
-}
-
-/* Cards CSS block */
-
-.card {
-	border: 1px solid rgba(0,0,0,.125);
-	border-radius: 0.25rem;
-	color: #212529;
-	text-align: left;
-	display: inline-block;
-}
-
-.card-img-top {
-	width: 100%;
-	border-top-left-radius: calc(0.25rem - 1px);
-	border-top-right-radius: calc(0.25rem - 1px);
-}
-
-.card-body {
-	padding: 1.25rem;
-}
-
-.card-title {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
-}
-
-.card-text {
-	margin-top: 0;
-	margin-bottom: 1rem;
 }
 
 .btn-primary {
